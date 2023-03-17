@@ -4,6 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(66, 62, 62);
     box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    overflow-X: hidden;
 }
 .clock{
     width: 500px;
