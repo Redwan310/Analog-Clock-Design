@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(58, 57, 57);
+    box-sizing: border-box;
+}
+.clock{
+    width: 500px;
+    height: 500px;
+    border: 5px solid rgb(67, 0, 175);
+    outline: 5px double rgb(25, 0, 255);
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    border-radius: 50%;
+}
+.point{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(68, 5, 54);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+.hour{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    position: absolute;
+}
+
+.hour-1{
+    top: 40px;
+    right: 130px;
+}
+.hour-2{
+    top: 125px;
+    right: 45px;
+}
+.hour-3{
+    top: 235px;
+    right: 10px;
+}
+.hour-4{
+    top: 345px;
+    right: 50px;
+}
+.hour-5{
+    top: 430px;
+    right: 130px;
+}
+.hour-6{
+    bottom: 10px;
+    left: 240px;
+}
+.hour-7{
+    top: 430px;
+    left: 130px;
+}
+.hour-8{
+    top: 345px;
+    left: 45px;
+}
+.hour-9{
+    top: 235px;
+   left: 10px;
+}
+.hour-10{
+    top: 125px;
+    left: 45px;
+}
+.hour-11{
+    top: 40px;
+    left: 130px;
+}
+.hour-12{
+    top: 10px;
+   left: 235px;
+}
+.name{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(10, 0, 62);
+    position: absolute;
+    top: 110px;
+    left: 31%;
+    text-align: center;
+    color: rgba(117, 243, 0, 0.918);
+    text-shadow: 2px 2px 20px rgb(92, 89, 89);
+    
+}
+
+.second{
+    width: 220px;
+    height: 1px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 49.5%;
+    left: 50%;
+    transform-origin: left;
+    transform: translateY(-50%, -50%);
+    transform: rotate(200deg);
+    -webkit-transform: rotate(200deg);
+    -moz-transform: rotate(200deg);
+    -ms-transform: rotate(200deg);
+    -o-transform: rotate(200deg);
+    z-index: 20;
+    border-radius: 20px;
+}
+.second::before{
+    content: 'S';
+    position: absolute;
+    right: -12px;
+    top: -5px;
+    font-weight: bold;
+    color: rgb(204, 12, 12);
+}
+.second::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+.hour-hand{
+    width: 135px;
+    height: 6px;
+    background-color: #ee04ee;
+    position: absolute;
+    top: 49.5%;
+    left: 50%;
+    transform: rotate(20deg);
+    transform-origin: left;
+    border-radius: 20px;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+.hour-hand::before{
+    content: 'H';
+    position: absolute;
+    right: -12px;
+    top: -5px;
+    font-weight: bold;
+    color: #ee04ee;
+}
+.minute{
+    width: 200px;
+    height: 2px;
+    background-color: rgb(0, 25, 253);
+    position: absolute;
+    top: 49.5%;
+    left: 50%;
+    transform-origin: left;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transform: rotate(92deg);
+    -webkit-transform: rotate(92deg);
+    -moz-transform: rotate(92deg);
+    -ms-transform: rotate(92deg);
+    -o-transform: rotate(92deg);
+}
+.minute::before{
+    content: 'M';
+    position: absolute;
+    right: -14px;
+    top: -5px;
+    font-weight: bold;
+    color: rgb(38, 0, 255);
+}
+
+#time{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    border: 2px solid red;
+    padding: 0 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.id{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    left: 0px;
+    font-size: 10px;
+    color: rgb(43, 255, 0);
+    flex-direction: column;
+    text-align: right;
+}
+.id a{
+    color: rgb(0, 255, 200);
+}
