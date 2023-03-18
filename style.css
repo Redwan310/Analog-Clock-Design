@@ -1,13 +1,25 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background-color: black;
+}
+.content{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    margin: 200px auto;
+  }
 .clock{
     width: 500px;
     height: 500px;
     position: relative;
     background-color: rgb(86, 96, 97);
     border-radius: 50%;
-    border: 2px solid red;
+    border: 5px solid rgb(255, 255, 255);
     margin: 0 auto;
 }
 .clock .hour{
@@ -70,7 +82,7 @@
 .second{
     width: 220px;
     height: 1px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 49.5%;
     left: 50%;
@@ -90,7 +102,7 @@
     right: -12px;
     top: -5px;
     font-weight: bold;
-    color: rgb(204, 12, 12);
+    color: rgb(255, 255, 255);
 }
 .second::after{
     content: '';
@@ -99,7 +111,7 @@
     top: 1px;
     height: 15px;
     width: 15px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -168,7 +180,7 @@
     position: absolute;
     top: 350px;
     left: 150px;
-    border: 2px solid red;
+    border: 2px solid rgb(20, 3, 3);
     padding: 0 10px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -178,17 +190,15 @@
 }
 .id{
     text-align: center;
-    position: relative;
-    top: 50%;
-    left: 0%;
+    margin-top: 100px;
 
 }
 .id a{
-    color: rgb(255, 0, 0);
+    color: rgb(43, 255, 0);
 }
 .glow {
-    font-size: 2vw;
-    color: #031681;
+    font-size: 30px;
+    color: #ffffff;
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
   }
@@ -202,8 +212,3 @@
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-} 
